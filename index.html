@@ -17,7 +17,57 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="canonical" href="https://www.vianordai.no" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<!-- Default Favicon (PNG) -->
 		<link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/buinesslogonotextcircle.png" />
+  
+		<!-- Apple Touch Icon (for iOS devices, 180x180 is standard size) -->
+		<link rel="apple-touch-icon" sizes="180x180" href="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/buinesslogonotextcircle.png" />
+		
+		<!-- Android Chrome Icon (192x192 for Android home screen) -->
+		<link rel="icon" sizes="192x192" href="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/buinesslogonotextcircle.png" />
+		
+		<!-- Windows 10 Tile Icon -->
+		<meta name="msapplication-TileImage" content="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/buinesslogonotextcircle.png" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+	  
+		<!-- WebP Favicon (for modern browsers) -->
+		<link rel="icon" type="image/webp" href="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/buinesslogonotextcircle.webp" />
+		
+		<!-- ICO Favicon (fallback for older browsers like IE) -->
+		<link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/buinesslogonotextcircle.ico" />
+		
+		<script defer src="https://cdn.jsdelivr.net/gh/Niave/Chatbot_Widget/dist/chatbot.bundle.js"></script>
+		<script>
+			// This runs after the DOM content is fully loaded
+			document.addEventListener('DOMContentLoaded', function() {
+				console.log("DOM content loaded");  // Check if this is triggered
+	
+				// Check if the initChatbot function is available
+				if (typeof window.initChatbot === 'function') {
+					window.initChatbot({
+						botName: 'ViaNordAI',
+						logoSrc: 'https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/buinesslogonotextcircle.png',
+						assistantTitle: 'ViaNordAI',
+						greetingHTML: `
+							<div style="display: flex; align-items: center; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', sans-serif; color: #333; line-height: 1.7; font-size: 16px;">
+								<div>
+									<p style="margin-bottom: 14.5px;">Hello and welcome!</p>
+									<p style="margin-bottom: 14.5px;">I am the virtual assistant for ViaNordAI. I'm here to help you with any questions or assistance you may need.</p>
+									<p style="margin-bottom: 14.5px;">If you prefer to contact us directly, you can reach us at <a href="mailto:info@vianordai.no" style="color: #1a73e8; text-decoration: none;">info@vianordai.no</a>.</p>
+									<p style="font-size: 14.5px; font-weight: bold; color: #333; margin-top: 14px;">How can I assist you today?</p>
+								</div>
+							</div>
+						`,
+						buttonColor: '#3C84A7',
+						buttonHoverColor: '#2F6C8A',
+						MobileChatHeight: '590px',
+						webhookURL: 'https://hook.eu2.make.com/gil8jf5c5pdn9sge64d1t7kl83ma5mv9'
+					});
+				} else {
+					console.error("initChatbot function not found!");
+				}
+			});
+		</script>
 	</head>
 	<body class="landing is-preload">
 		<!-- Page Wrapper -->
@@ -59,26 +109,54 @@
 <!-- Two -->
 <section id="two" class="wrapper alt style2">
 	<section class="spotlight">
-		<div class="image"><img src="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/pic01.jpg" alt="" /></div>
+		<div class="image">
+			<img 
+				src="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/Simple-embed-diagram.webp" 
+				alt="simple diagram showing the process of embedding content in a website" 
+				srcset="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/Simple-embed-diagram.webp 1024w,
+          				https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/Simple-embed-diagram-small.webp 500w" 
+  				sizes="(max-width: 600px) 500px, 1024px"
+				loading="lazy"/>
+			</div>
 		<div class="content">
 			<h2>Simple Embed<br /> No-Code Setup</h2>
 			<p>Our widget can be embedded into any website with just a snippet of code. Powered by a Make (Integromat) integration and OpenAI, you retain full control over the prompt and conversation design — no servers, no headaches.</p>
 		</div>
 	</section>
+
 	<section class="spotlight">
-		<div class="image"><img src="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/pic02.jpg" alt="" /></div>
-		<div class="content">
-			<h2>Natural Language Processing<br /> With OpenAI Under the Hood</h2>
-			<p>We harness OpenAI’s advanced language models to handle the heavy lifting. Your chatbot will respond in natural, helpful, and context-aware ways — all managed through our simplified backend workflow.</p>
+		<div class="image">
+		  <img 
+			src="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/Natural-Language Processing-diagram.webp" 
+			alt="simple diagram illustrating the key concepts and processes in Natural Language Processing (NLP)" 
+			srcset="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/Natural-Language Processing-diagram.webp 1024w,
+				   https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/Natural-Language Processing-diagram-small.webp 500w" 
+			sizes="(max-width: 600px) 500px, 1024px" 
+			loading="lazy"/>
 		</div>
-	</section>
-	<section class="spotlight">
-		<div class="image"><img src="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/pic03.jpg" alt="" /></div>
+	  
 		<div class="content">
-			<h2>Built for Customer Engagement<br /> And Growth</h2>
-			<p>Whether you're answering questions, collecting leads, or directing users — our chatbot is designed to enhance the customer experience and boost conversions. It's like having a smart assistant on-call 24/7.</p>
+		  <h2>Natural Language Processing<br /> With OpenAI Under the Hood</h2>
+		  <p>We harness OpenAI’s advanced language models to handle the heavy lifting. Your chatbot will respond in natural, helpful, and context-aware ways — all managed through our simplified backend workflow.</p>
 		</div>
-	</section>
+	  </section>
+	  
+	  <section class="spotlight">
+		<div class="image">
+		  <img 
+			src="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/Built-for Customer-Engagement-diagram.webp" 
+			alt="diagram illustrating strategies and tools built for enhancing customer engagement" 
+			srcset="https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/Built-for Customer-Engagement-diagram.webp 1024w,
+				   https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/Built-for Customer-Engagement-diagram-small.webp 500w" 
+			sizes="(max-width: 600px) 100vw, 1024px" 
+			loading="lazy"/>
+		</div>
+		<div class="content">
+		  <h2>Built for Customer Engagement<br /> And Growth</h2>
+		  <p>Whether you're answering questions, collecting leads, or directing users — our chatbot is designed to enhance the customer experience and boost conversions. It's like having a smart assistant on-call 24/7.</p>
+		</div>
+	  </section>
+	  
 </section>
 
 <!-- Three -->
@@ -173,34 +251,7 @@
 			<script src="assets/js/main.js"></script>
 		
 			
-			<script defer src="https://cdn.jsdelivr.net/gh/Niave/Chatbot_Widget/dist/chatbot.bundle.js"></script>
-			<script>
-					 window.onload = function() {
-						if (typeof window.initChatbot === 'function') {
-							window.initChatbot({
-								botName: 'ViaNordAI',  // Set the botName to 'me'
-								logoSrc: 'https://cdn.jsdelivr.net/gh/Niave/BizWeb@main/images/buinesslogonotextcircle.png',
-								assistantTitle:'ViaNordAI',
-								greetingHTML:`
-								<div style="display: flex; align-items: center; font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Segoe UI', sans-serif; color: #333; line-height: 1.7; font-size: 16px;">
-									<div>
-									<p style="margin-bottom: 14.5px;">Hello and welcome!</p>
-									<p style="margin-bottom: 14.5px;">I am the virtual assistant for ViaNordAI. I'm here to help you with any questions or assistance you may need.</p>
-									<p style="margin-bottom: 14.5px;">If you prefer to contact us directly, you can reach us at <a href="mailto:info@vianordai.no" style="color: #1a73e8; text-decoration: none;">info@vianordai.no</a>.</p>
-									<p style="font-size: 14.5px; font-weight: bold; color: #333; margin-top: 14px;">How can I assist you today?</p>
-									</div>
-								</div>
-								`,	
-								buttonColor: '#3C84A7', // Light teal for the button
-								buttonHoverColor: '#2F6C8A', // Slightly darker teal for hover effect,
-								MobileChatHeight: '590px'
-							}); 
-						}
-						else {
-							console.error("initChatbot function not found!");
-						}
-					};
-			</script>
+			
 
 	</body>
 </html>
